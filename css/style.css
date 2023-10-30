@@ -13,8 +13,8 @@ body{
 }
 
 .cell{
+    aspect-ratio: 1/1;
     width: 10px;
-    height: 10px;
     outline: inset;
     color: black;
 }
