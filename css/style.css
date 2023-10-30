@@ -7,14 +7,15 @@ body{
 
 #container{
     display: flex;
-    justify-content: space-between;
-    align-items: center;
+    aspect-ratio: 1/1;
+    height: 370px;
+    justify-content: space-evenly;
     flex-wrap: wrap;
 }
 
 .cell{
     aspect-ratio: 1/1;
-    width: 10px;
+    width: 23px;
     outline: inset;
     color: black;
 }
