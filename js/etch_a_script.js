@@ -10,4 +10,5 @@ function gridDiv(size=256){
     }
 }
 
-gridDiv()
+//Remove me later[for testing purposes]
+gridDiv();
