@@ -1,7 +1,20 @@
 
+body{
+    display: flex;
+    flex-direction: row;
+}
+
+
+#container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
 .cell{
     width: 10px;
     height: 10px;
-    color: black;
     outline: inset;
+    color: black;
 }
