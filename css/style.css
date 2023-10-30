@@ -1,21 +1,17 @@
 
-body{
-    display: flex;
-    flex-direction: row;
-}
-
-
 #container{
     display: flex;
-    aspect-ratio: 1/1;
-    height: 370px;
-    justify-content: space-evenly;
-    flex-wrap: wrap;
 }
 
-.cell{
+.row{
     aspect-ratio: 1/1;
     width: 23px;
     outline: inset;
     color: black;
+}
+.column{
+    aspect-ratio: 1/1;
+    width: 23px;
+    outline: inset;
+    color: red;
 }
