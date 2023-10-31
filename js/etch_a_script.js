@@ -47,3 +47,7 @@ function draw(){
     });
 }
 draw();
+
+function playerReset(){
+    
+}
