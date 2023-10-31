@@ -54,6 +54,10 @@ function playerReset(){
     });
 }
 
+function gameReset(size){
+    
+}
+
 function main(){
     gridDiv();
     draw();
