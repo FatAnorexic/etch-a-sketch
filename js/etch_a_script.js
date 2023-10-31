@@ -24,6 +24,7 @@ function draw(){
     console.log(targets);
     targets.forEach((target)=>{
         target.addEventListener('mouseenter', ()=>{
+            console.log('bounds');
             target.style.background='black';
         });
     });
