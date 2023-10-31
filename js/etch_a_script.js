@@ -16,5 +16,8 @@ function gridDiv(row=16, column=16){
     }
 }
 
+function draw(){
+}
 //Remove me later[for testing purposes]
 gridDiv();
+draw();
