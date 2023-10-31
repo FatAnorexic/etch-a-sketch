@@ -3,15 +3,12 @@
     display: flex;
 }
 
-#row, #column{
+.column{
     aspect-ratio: 1/1;
     width: 23px;
     outline: inset;
 }
 /* delete later */
-#column{
+.column{
     color: red;
-}
-#row{
-    color:black;
 }
