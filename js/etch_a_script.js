@@ -25,7 +25,7 @@ function draw(){
     targets.forEach((target)=>{
         target.addEventListener('mouseenter', ()=>{
             target.style.background='black';
-        })
-    })
+        });
+    });
 }
 draw();
