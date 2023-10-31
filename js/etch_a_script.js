@@ -29,9 +29,6 @@ function gridDiv(row=16, column=16){
     }
 }
 
-//Remove me later[for testing purposes]
-gridDiv();
-
 
 function draw(){
     
@@ -46,8 +43,21 @@ function draw(){
         });
     });
 }
-draw();
 
 function playerReset(){
-    
+    let size;
+    const btn=document.querySelector('button');
+    btn.addEventListener('click', ()=>{
+        console.log('clicked')
+        size=window.prompt('How many squares would you like?(Max 100): ');
+        gameReset(size);
+    });
 }
+
+function main(){
+    gridDiv();
+    draw();
+    playerReset();
+}
+
+main();
