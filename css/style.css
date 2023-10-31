@@ -1,6 +1,9 @@
 
 #container{
     display: flex;
+    justify-content: center;
+    align-items: center;
+    outline: 1px outset black;
 }
 
 .column{
@@ -11,4 +14,7 @@
 /* delete later */
 .column{
     color: red;
+}
+#container{
+    margin: 200px;
 }
