@@ -77,7 +77,7 @@ function gameReset(size){
     //for testing, delete later
     console.log('fire');
     //temp variables for reseting the board|needs expansion and refactor
-    let row=size/2, col=size/2;
+    let row=size, col=size;
     gridDiv(row, col);
 }
 
