@@ -19,6 +19,7 @@ function gridDiv(row=16, column=16){
         //each row of columns.
         
         const r=document.createElement('div');
+        r.classList.add('row');
         container.appendChild(r);
 
         for(let y=0;y<column;y++){
