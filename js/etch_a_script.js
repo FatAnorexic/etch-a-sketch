@@ -64,7 +64,6 @@ function gameReset(size){
     }
     console.log('fire');
     
-    
 }
 
 function main(){
