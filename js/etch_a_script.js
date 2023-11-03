@@ -56,14 +56,22 @@ function playerReset(){
 }
 
 function gameReset(size){
+    //Before we can create a new board to be populated, we first need to delete the 
+    //board already in play. We do so by removing each child element within the parent
+    //'#container'. Because we are oblivious to the possible size of the board at a given
+    //instance, we use a while loop to iterate until all children are removed.
     let del=document.querySelector('#container');
     let child=del.lastElementChild
     while(child){
         del.removeChild(child);
         child=del.lastElementChild;
     }
+
+    //for testing, delete later
     console.log('fire');
-    
+    //temp variables for reseting the board|needs expansion and refactor
+    let row=size/2, col=size/2;
+    gridDiv(row, col);
 }
 
 function main(){
