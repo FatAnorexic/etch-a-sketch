@@ -27,6 +27,7 @@ function gridDiv(row=16, column=16){
             r.appendChild(c);
         }
     }
+    draw();
 }
 
 
@@ -76,7 +77,7 @@ function gameReset(size){
 
 function main(){
     gridDiv();
-    draw();
+    
     playerReset();
 }
 
