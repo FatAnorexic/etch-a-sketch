@@ -48,6 +48,7 @@ function playerReset(){
     let size;
     const btn=document.querySelector('button');
     btn.addEventListener('click', ()=>{
+        //For testing
         console.log('clicked')
         size=window.prompt('How many squares would you like?(Max 100): ');
         gameReset(size);
@@ -55,6 +56,14 @@ function playerReset(){
 }
 
 function gameReset(size){
+    let del=document.querySelector('#container');
+    let child=del.lastElementChild
+    while(child){
+        del.removeChild(child);
+        child=del.lastElementChild;
+    }
+    console.log('fire');
+    
     
 }
 
