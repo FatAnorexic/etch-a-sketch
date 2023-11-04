@@ -53,13 +53,10 @@ function playerReset(){
         //For testing
         console.log('clicked')
         size=parseInt(window.prompt('How many squares would you like?(Max 100): '));
-        
-        while((size>100 || size <0) || !Number.isInteger(size)){
-            alert("Error! Size cannot be greater than 100 or less than zero. it must also be a whole number");
-            size=parseInt(window.prompt('How many squares would you like? (Max 100|Min 2): '));
-        } 
 
-        gameReset(size);
+        (size>100 || size <0) || !Number.isInteger(size) ? 
+            alert("Error! Size cannot be greater than 100 or less than zero. it must also be a whole number"):
+            gameReset(size); 
     });
 }
 
