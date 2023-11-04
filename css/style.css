@@ -8,7 +8,6 @@
 
 .column{
     aspect-ratio: 1/1;
-    width: 23px;
     outline: 1px outset;
 }
 /* delete later */
@@ -16,8 +15,7 @@
     color: red;
 }
 .row{
-    display: flex;
-    flex-direction: column;
+    flex-grow: 1;
 }
 #container{
     margin: 200px;
