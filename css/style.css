@@ -5,7 +5,7 @@
 }
 
 .column{
-    outline: 1px outset;
+    outline: 1px outset red;
 }
 .row{
     flex-grow: 1;
