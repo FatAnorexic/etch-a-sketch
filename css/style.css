@@ -5,7 +5,6 @@
 }
 
 .column{
-    aspect-ratio: 1/1;
     outline: 1px outset;
 }
 .row{
