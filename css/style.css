@@ -4,6 +4,15 @@
     align-items: center;
     margin:50px 100px;
 }
+.btn{
+    font-family: fantasy;
+    font-size: xxx-large;
+    background-color: darkred;
+    color: whitesmoke;
+    border-radius: 20px;
+    padding: 10px 30px;
+    margin: auto;
+}
 #container{
     display: flex;
     outline: 1px outset black;
