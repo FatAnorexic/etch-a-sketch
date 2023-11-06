@@ -1,4 +1,9 @@
-
+.header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin:50px 100px;
+}
 #container{
     display: flex;
     outline: 1px outset black;
