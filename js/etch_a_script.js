@@ -47,12 +47,19 @@ function draw(){
 }
 
 function playerReset(){
-    let size;
     const btn=document.querySelector('button');
+    
+    document.querySelector('#number').addEventListener('keypress', function(e){
+        let text=document.getElementById('number').value;
+        if((e.key === 'Enter') && text!=""){
+            document.querySelector('.btn').click();
+        }
+    });
+
     btn.addEventListener('click', ()=>{
         //For testing
         console.log('clicked')
-        size=parseInt(document.getElementById("number").value);
+        let size=parseInt(document.getElementById("number").value);
         console.log(size);
         (size>100 || size <0) || !Number.isInteger(size) ? 
             alert("Error! Size cannot be greater than 100 or less than zero. it must also be a whole number"):
@@ -82,7 +89,6 @@ function gameReset(size){
 
 function main(){
     gridDiv();
-    
     playerReset();
 }
 
