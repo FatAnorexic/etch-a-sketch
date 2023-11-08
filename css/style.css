@@ -17,11 +17,12 @@ holders for the time being.*/
 #container{
     display: flex;
     outline: 1px outset black;
+    background-color: #afafaf;
 }
 
 .column{
     aspect-ratio: 1/1;
-    outline: 1px outset;
+    /* outline: 1px outset; */
 }
 .row{
     flex-grow: 1;
@@ -67,7 +68,7 @@ holders for the time being.*/
 
 /* delete later */
 .column{
-    color: red;
+    /* color: red; */
 }
 #container{
     margin: auto;
