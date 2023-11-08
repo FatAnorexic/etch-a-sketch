@@ -2,15 +2,19 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    margin:50px 100px;
+    align-items: end;
+    margin:10px 100px 50px;
 }
-.info{
-
+.info {
+    font-family: sans-serif;
+    font-size: x-large;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    flex-basis: 0;
+    margin-right: 20px;
 }
 #number {
-    /* margin: auto; */
-    margin: 10px;
-    margin-right: 20px;
     font-size: x-large;
     font-family: fantasy;
     border-radius: 5px;
@@ -23,7 +27,6 @@
     color: whitesmoke;
     border-radius: 20px;
     padding: 10px 30px;
-    /* margin: auto; */
     box-shadow: 5px 10px rgba(0, 0, 0, 0.3);
 }
 .btn:active{
