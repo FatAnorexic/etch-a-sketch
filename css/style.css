@@ -1,8 +1,11 @@
-.header{
+.reset{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     margin:50px 100px;
+}
+.info{
+
 }
 #number {
     /* margin: auto; */
