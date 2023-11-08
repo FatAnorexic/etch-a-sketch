@@ -1,3 +1,19 @@
+
+#container{
+    display: flex;
+    outline: 1px outset black;
+}
+
+.column{
+    aspect-ratio: 1/1;
+    outline: 1px outset;
+}
+.row{
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+}
+
 .reset{
     display: flex;
     flex-wrap: wrap;
@@ -31,20 +47,6 @@
 }
 .btn:active{
     transform: translateY(5px);
-}
-#container{
-    display: flex;
-    outline: 1px outset black;
-}
-
-.column{
-    aspect-ratio: 1/1;
-    outline: 1px outset;
-}
-.row{
-    flex-grow: 1;
-    display: flex;
-    flex-direction: column;
 }
 /* delete later */
 .column{
