@@ -35,10 +35,10 @@ function gridDiv(row=16, column=16){
 function draw(){
     
     let targets=document.querySelectorAll('.column');
-    //Remove console later[for testing purposes]
-    console.log(targets);
+
     targets.forEach((target)=>{
         target.addEventListener('mouseenter', ()=>{
+            
             //Remove console later[for testing purposes]
             console.log('bounds');
             target.style.background='black';
@@ -47,8 +47,12 @@ function draw(){
 }
 
 function playerReset(){
-    const btn=document.querySelector('button');
+    const btn=document.querySelector('.btn');
     
+    //This will allow the user to simply input their numbers and press enter
+    //rather than having to then grab the mouse and move over to click reset
+    //the text variable is declared inside the event, as we wish to only
+    //load onto memory AFTER the key is pressed.
     document.querySelector('#number').addEventListener('keypress', function(e){
         let text=document.getElementById('number').value;
         if((e.key === 'Enter') && text!=""){
@@ -57,10 +61,10 @@ function playerReset(){
     });
 
     btn.addEventListener('click', ()=>{
-        //For testing
-        console.log('clicked')
+        //This grabs the input from the text box. if It is an int, it's passed
+        //to the game reset function. Otherwise the error alert is displayed. 
         let size=parseInt(document.getElementById("number").value);
-        console.log(size);
+        
         (size>100 || size <0) || !Number.isInteger(size) ? 
             alert("Error! Size cannot be greater than 100 or less than zero. it must also be a whole number"):
             gameReset(size);
