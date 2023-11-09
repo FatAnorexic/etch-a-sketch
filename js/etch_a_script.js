@@ -1,10 +1,6 @@
 
 function gridDiv(row=16, column=16){
     
-    //As of now this does not serve a purpose, but may become handy later.
-    size=row*column;
-    console.log(size);
-    
     const container = document.querySelector('#container');
     
     //A nested loop was chosen for its organizational capabilities. In each "row"
@@ -39,8 +35,6 @@ function draw(){
     targets.forEach((target)=>{
         target.addEventListener('mouseenter', ()=>{
             
-            //Remove console later[for testing purposes]
-            console.log('bounds');
             target.style.background='black';
         });
     });
@@ -83,10 +77,7 @@ function gameReset(size){
         del.removeChild(child);
         child=del.lastElementChild;
     }
-
-    //for testing, delete later
-    console.log('fire');
-    //temp variables for reseting the board|needs expansion and refactor
+    
     let row=size, col=size;
     gridDiv(row, col);
 }
