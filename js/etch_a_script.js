@@ -31,11 +31,26 @@ function gridDiv(row=16, column=16){
 function draw(){
     
     let targets=document.querySelectorAll('.column');
-
+    let num=0;
+    let rainbow=false;
+    document.querySelector('.rainbow').addEventListener('click',()=>{
+        if(num%2==0){
+            rainbow=true;
+            num++;
+        }else{
+            rainbow=false;
+            num++;
+        }
+        
+    });
+    console.log(rainbow);
     targets.forEach((target)=>{
         target.addEventListener('mouseenter', ()=>{
-            
-            target.style.background='black';
+            if(rainbow){
+                let color=Math.floor(Math.random()*16777215).toString(16);
+                console.log(color)
+                target.style.background=`#${color}`;
+            }else{target.style.background='black';}
         });
     });
 }
