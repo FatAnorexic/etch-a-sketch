@@ -29,28 +29,37 @@ function gridDiv(row=16, column=16){
 
 
 function draw(){
-    
     let targets=document.querySelectorAll('.column');
-    let num=0;
     let rainbow=false;
+    let gradient=false
+
+    //These two simple functions use the shorthand if else statement
+    //to determine if the variables are true or false upon click
+    //and inverts them if they are. This winds up treating them like a
+    //switch.
     document.querySelector('.rainbow').addEventListener('click',()=>{
-        if(num%2==0){
-            rainbow=true;
-            num++;
-        }else{
-            rainbow=false;
-            num++;
-        }
-        
+        !rainbow ? rainbow=true:rainbow=false;
+        console.log(`Rainbow: ${rainbow}`);
     });
-    console.log(rainbow);
+
+    document.querySelector('.gradient').addEventListener('click', ()=>{
+        !gradient ? gradient=true:gradient=false;
+        console.log(`Gradient: ${gradient}`);
+    });
+
     targets.forEach((target)=>{
-        target.addEventListener('mouseenter', ()=>{
+        target.addEventListener('mouseenter', (e)=>{
+            if(gradient){
+                //This will slowly increase the opacity 10% every pass
+                e.target.style.opacity-='-0.1';
+            }
             if(rainbow){
                 let color=Math.floor(Math.random()*16777215).toString(16);
-                console.log(color)
-                target.style.background=`#${color}`;
-            }else{target.style.background='black';}
+                e.target.style.background=`#${color}`;
+
+            }else{
+                e.target.style.background='black';
+            }
         });
     });
 }

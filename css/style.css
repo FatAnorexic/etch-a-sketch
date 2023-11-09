@@ -43,9 +43,9 @@ h1{
 .reset{
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
-    align-items: end;
-    margin:10px 100px 50px;
+    justify-content: space-between;
+    align-items: center;
+    margin:10px 35px 50px;
 }
 .info {
     font-family: fantasy, sans-serif;
@@ -63,7 +63,7 @@ h1{
     font-family: fantasy;
     border-radius: 5px;
 }
-.btn{
+button{
     font-family: fantasy;
     font-size: xxx-large;
     background-color: darkred;
@@ -72,8 +72,15 @@ h1{
     padding: 10px 30px;
     box-shadow: 0 0 5px 10px rgba(0, 0, 0, 0.3);
 }
-.btn:active{
+button:active{
     transform: translateY(5px);
     box-shadow: 0 0 2px 3px rgba(0, 0, 0, 0.3);
 }
+.rainbow--switch{
+    --text-content: "Rainbow";
+}
+.rainbow--switch::before{
+    content: var(--text-content, "test");
+}
+    
 /*  */
