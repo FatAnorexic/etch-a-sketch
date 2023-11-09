@@ -8,21 +8,20 @@
     <script src="js/etch_a_script.js" defer></script>
 </head>
 <body>
-    <div class="header">
-        <h1>Etch-a-Sketch</h1>
-    </div>
-    <div>
-        <img src="img/etch-a-sketch.png"/>
-        <div id="container"></div>
-    </div>
-    <div class="reset">
-        <div class="info">
-            <!-- Input the number of pixels you wish to work with, and click reset. An NxN grid will be made below. -->
-            <!-- Note: The max size is 100 and minimum is 0. -->
-            Grid Size
-        <input type="text" id="number"/>
+    <div class="wrapper">
+        <div class="header">
+            <h1>Etch-a-Sketch</h1>
         </div>
-        <button class="btn">Reset</button>
+        <div id="container"></div>
+        <div class="reset">
+            <div class="info">
+                <!-- Input the number of pixels you wish to work with, and click reset. An NxN grid will be made below. -->
+                <!-- Note: The max size is 100 and minimum is 0. -->
+                Grid Size
+                <input type="text" id="number"/>
+            </div>
+            <button class="btn">Reset</button>
+        </div>
     </div>
 </body>
 </html>
