@@ -75,12 +75,5 @@ button{
 button:active{
     transform: translateY(5px);
     box-shadow: 0 0 2px 3px rgba(0, 0, 0, 0.3);
-}
-.rainbow--switch{
-    --text-content: "Rainbow";
-}
-.rainbow--switch::before{
-    content: var(--text-content, "test");
-}
-    
+}    
 /*  */
